@@ -76,6 +76,6 @@ app.get('/', (req, res) => {
   res.send('Hello Emma watson darling')
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
